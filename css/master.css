@@ -1,0 +1,53 @@
+/* PC Display */
+* {margin: 0; padding: 0;}
+nav ul{display: flex; justify-content: center; list-style: none; margin: 1em;}
+nav ul a {color: white; text-decoration: none; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 0.3em; font-size: 90%;}
+
+/* Main Index */
+.main-index {background-color: white; display: flex; flex-direction: column; padding: 0.5em;}
+.main-index h1 {padding: 0.5em; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.main-index article {display: flex; flex-direction: row; padding: 0.5em;}
+.main-index article p {padding: 0.5em; width: 100%;}
+.main-index article img {width: 50%;}
+
+/* Main-About*/
+.main-about {background-color: white; display: flex; flex-direction: column;}
+.main-about p {padding: 0.5em 1em;}
+.main-about h1 {padding: 0.5em; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.main-about article {display: flex; flex-wrap: wrap; justify-content: center;}
+.main-about article img {padding: 1em; height: 50%; width: 50%;}
+
+
+/* Main Form*/
+.main-form {background-color: white; display: flex; flex-direction: column; padding: 1em;}
+.main-form h1 {padding: 0.5em; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;}
+.main-form form {border: solid; padding: 1em; margin: 0em 5% 2em;}
+.main-form article {display: flex; border: solid;}
+.main-form article p{ width: 50%; padding: 1em;}
+
+
+/* Redes y Links*/
+.links {display: flex; padding: 1em; margin: 1em 0em; background-color: rgba(130, 130, 130, 0.3); justify-content: center; border-radius: 2em;}
+.links p {color: white;}
+.links ul {display: flex; justify-content: center; width: 25%; list-style: none;}
+.links ul a {color: white; text-decoration: none; margin: 1em;}
+
+
+/* Effects */
+a:hover {background-color: rgb(0, 206, 185); transition: 1s; padding: 0.4em; border-radius: 0.5em;}
+
+/* Tablet Display */
+@media (max-width: 768px){
+    body{margin: 0; padding: 0;}
+    .main-index {background-color:white; display: flex; flex-direction: column; padding: 0.5em;}
+    .main-index h1 {padding: 0.5em; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    .main-index article {display: flex; flex-direction: column; padding: 0.5em;}
+    .main-index article p {padding: 0.5em; width: 100%;}
+    .main-index article img {width: 100%;}
+}
+
+/* Phone Display */
+@media (max-width: 540px){
+    body{margin: 0; padding: 0;}
+    .main-index {background-color:white;  padding: 1em;}
+}
