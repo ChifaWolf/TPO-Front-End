@@ -43,7 +43,7 @@ footer {text-align: center; color: white; padding: 1em; font-family: Verdana, Ge
 
 
 /* Tablet Display */
-@media (max-width: 1024px){
+@media (max-width: 360px){
     body{margin: 0; padding: 0;}
 
     /* Main-index*/
@@ -57,13 +57,4 @@ footer {text-align: center; color: white; padding: 1em; font-family: Verdana, Ge
     .main-form article {display: flex; border: solid;}
     .main-form article iframe {width: 100%; border-radius: 2em;}
 
-}
-
-/* Phone Display */
-@media (max-width: 360px){
-    body{margin: 0; padding: 0;}
-    .main-index {background-color:blue;  padding: 1em;}
-    .main-form article {display: flex; border: solid; flex-direction: column;}
-    .main-form article iframe {width: 100%;}
-    .main-form article p{ width: 100%; padding: 1em; text-align: center;}
 }
