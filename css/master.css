@@ -60,7 +60,7 @@ footer {text-align: center; color: white; padding: 1em; font-family: Verdana, Ge
 }
 
 /* Phone Display */
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 600px){
     body{margin: 0; padding: 0;}
     .main-index {background-color:blue;  padding: 1em;}
     .main-form article {display: flex; border: solid; flex-direction: column;}
