@@ -43,7 +43,7 @@ footer {text-align: center; color: white; padding: 1em; font-family: Verdana, Ge
 
 
 /* Tablet Display */
-@media (max-width: 360px){
+@media (max-width: 24em){
     body{margin: 0; padding: 0;}
 
     /* Main-index*/
