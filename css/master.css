@@ -1,53 +1,69 @@
 /* PC Display */
 * {margin: 0; padding: 0;}
 nav ul{display: flex; justify-content: center; list-style: none; margin: 1em;}
-nav ul a {color: white; text-decoration: none; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 0.3em; font-size: 90%;}
+nav ul a {color: white; text-decoration: none; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 0.2em; font-size: 90%; margin: 0.2em;}
 
 /* Main Index */
 .main-index {background-color: white; display: flex; flex-direction: column; padding: 0.5em;}
-.main-index h1 {padding: 0.5em; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.main-index h1 {padding: 0.3em; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;}
 .main-index article {display: flex; flex-direction: row; padding: 0.5em;}
-.main-index article p {padding: 0.5em; width: 100%;}
+.main-index article p {padding: 1em; width: 100%;}
 .main-index article img {width: 50%;}
 
-/* Main-About*/
-.main-about {background-color: white; display: flex; flex-direction: column;}
+/* Main-About */
+.main-about {background-color: white; display: flex; flex-direction: column; padding: 0.5em;}
 .main-about p {padding: 0.5em 1em;}
-.main-about h1 {padding: 0.5em; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.main-about h1, h2 {padding: 0.5em; font-family: Verdana, Geneva, Tahoma, sans-serif;}
 .main-about article {display: flex; flex-wrap: wrap; justify-content: center;}
 .main-about article img {padding: 1em; height: 50%; width: 50%;}
+.main-about ul, li {display: flex; justify-content: center;}
+.main-about ul li {border: solid; padding: 1em; width: 20%; border-radius: 1em;}
+.main-about ul li a {padding: 0.2em; margin: 0.2em; text-decoration: none; color: white;}
 
 
-/* Main Form*/
+/* Main Form */
 .main-form {background-color: white; display: flex; flex-direction: column; padding: 1em;}
 .main-form h1 {padding: 0.5em; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;}
-.main-form form {border: solid; padding: 1em; margin: 0em 5% 2em;}
-.main-form article {display: flex; border: solid;}
-.main-form article p{ width: 50%; padding: 1em;}
+.main-form form {border: solid; padding: 1em; margin: 0em 5% 2em; border-radius: 1em;}
+.main-form article {display: flex; border: solid; border-radius: 2em; flex-direction: column;}
+.main-form article iframe {width: 100%; border-radius: 1.5em;}
+.main-form article h2 { padding: 1em; text-align: center; font-size: xx-large; font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
+/* Effects */
+a:hover {background-color: rgb(0, 206, 185); transition: 1s; border-radius: 0.5em;}
 
-/* Redes y Links*/
+/* Redes y Links */
 .links {display: flex; padding: 1em; margin: 1em 0em; background-color: rgba(130, 130, 130, 0.3); justify-content: center; border-radius: 2em;}
 .links p {color: white;}
 .links ul {display: flex; justify-content: center; width: 25%; list-style: none;}
-.links ul a {color: white; text-decoration: none; margin: 1em;}
+.links ul a {color: white; text-decoration: none; margin: 1em; padding: 0.2em;}
 
+/* Footer */
+footer {text-align: center; color: white; padding: 1em; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.8em;}
 
-/* Effects */
-a:hover {background-color: rgb(0, 206, 185); transition: 1s; padding: 0.4em; border-radius: 0.5em;}
 
 /* Tablet Display */
-@media (max-width: 768px){
+@media only screen and (max-width: 1200px){
     body{margin: 0; padding: 0;}
-    .main-index {background-color:white; display: flex; flex-direction: column; padding: 0.5em;}
+
+    /* Main-index*/
+    .main-index {background-color:red; display: flex; flex-direction: column; padding: 0.5em;}
     .main-index h1 {padding: 0.5em; font-family: Verdana, Geneva, Tahoma, sans-serif;}
-    .main-index article {display: flex; flex-direction: column; padding: 0.5em;}
-    .main-index article p {padding: 0.5em; width: 100%;}
-    .main-index article img {width: 100%;}
+    .main-index article {display: flex; flex-direction: column;}
+    .main-index article p {width: 97%; text-align: justify; padding: 0.5em;}
+    .main-index article img {width: 97%; padding: 0.5em;}
+
+    /* Main-Form*/
+    .main-form article {display: flex; border: solid;}
+    .main-form article iframe {width: 100%; border-radius: 2em;}
+
 }
 
 /* Phone Display */
-@media (max-width: 540px){
+@media only screen and (max-width: 600px){
     body{margin: 0; padding: 0;}
-    .main-index {background-color:white;  padding: 1em;}
+    .main-index {background-color:blue;  padding: 1em;}
+    .main-form article {display: flex; border: solid; flex-direction: column;}
+    .main-form article iframe {width: 100%;}
+    .main-form article p{ width: 100%; padding: 1em; text-align: center;}
 }
