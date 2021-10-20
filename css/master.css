@@ -1,7 +1,7 @@
 /* PC Display */
 * {margin: 0; padding: 0;}
 nav ul{display: flex; justify-content: center; list-style: none; margin: 1em;}
-nav ul a {color: white; text-decoration: none; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 0.2em; font-size: 90%; margin: 0.2em;}
+nav ul a {color: white; text-decoration: none; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 0.2em; font-size: 80%; margin: 0.2em;}
 
 /* Main Index */
 .main-index {background-color: white; display: flex; flex-direction: column; padding: 0.5em;}
@@ -36,25 +36,36 @@ a:hover {background-color: rgb(0, 206, 185); transition: 1s; border-radius: 0.5e
 .links {display: flex; padding: 1em; margin: 1em 0em; background-color: rgba(130, 130, 130, 0.3); justify-content: center; border-radius: 2em;}
 .links p {color: white;}
 .links ul {display: flex; justify-content: center; width: 25%; list-style: none;}
-.links ul a {color: white; text-decoration: none; margin: 1em; padding: 0.2em;}
+.links ul a {color: white; text-decoration: none; padding: 0.5em; margin: 0.5em;}
 
 /* Footer */
 footer {text-align: center; color: white; padding: 1em; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.8em;}
 
-
 /* Tablet Display */
-@media (max-width: 1000px){
+@media only screen and (max-width: 1450px){
     body{margin: 0; padding: 0;}
 
     /* Main-index*/
-    .main-index {background-color:red; display: flex; flex-direction: column; padding: 0.5em;}
+    .main-index {background-color:white; display: flex; flex-direction: column; padding: 0.5em;}
     .main-index h1 {padding: 0.5em; font-family: Verdana, Geneva, Tahoma, sans-serif;}
     .main-index article {display: flex; flex-direction: column;}
     .main-index article p {width: 97%; text-align: justify; padding: 0.5em;}
     .main-index article img {width: 97%; padding: 0.5em;}
 
+    /* Main-About*/
+    .main-about article img {padding: 1em; height: 50%; width: 100%;}
+
     /* Main-Form*/
     .main-form article {display: flex; border: solid;}
     .main-form article iframe {width: 100%; border-radius: 2em;}
 
+} 
+
+/* Phone Display */
+@media only screen and (max-width: 600px){
+    body{margin: 0; padding: 0;}
+    .main-index {background-color: white;  padding: 1em;}
+    .main-form article {display: flex; border: solid; flex-direction: column;}
+    .main-form article iframe {width: 100%;}
+    .main-form article p{ width: 100%; padding: 1em; text-align: center;}
 }
